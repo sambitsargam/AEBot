@@ -1,0 +1,113 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-container {
+  margin-top: 20px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.convert-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.convert-button:disabled {
+  background-color: #999;
+}
+
+.convert-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.output {
+  margin-top: 20px;
+  text-align: left;
+}
+
+pre {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+pre code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+.copy-button-container {
+  margin-top: 10px;
+}
+
+.copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #50e3c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #3cb9a8;
+}
