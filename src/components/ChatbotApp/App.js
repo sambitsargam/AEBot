@@ -86,7 +86,7 @@ const ChatbotApp = () => {
     }
 
     try {
-      const amountInAe = parseFloat(amount) * 1e18; // Convert AE to aettos
+      const amountInAe = parseFloat(amount * 1e18); // Convert AE to aettos
       const tx = await aeSdk.spend(amountInAe, recipientAddress, { onAccount: userAddress });
       alert(`Transaction successful! Tx Hash: ${tx.hash}`);
 
