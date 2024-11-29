@@ -124,7 +124,9 @@ const ChatbotApp = () => {
         return "Invalid transfer command. Use: transfer <recipient_address> <amount>";
       }
       await transferTokens(recipientAddress, amount);
-      return `Transferred ${amount} AE to ${recipientAddress}.`;
+      return `Transferred ${amount} AE to ${recipientAddress}.
+      https://testnet.aescan.io/transactions/${tx.hash} `;
+      // return transaction url also
     }
 
     // Pass to backend `/chat`
