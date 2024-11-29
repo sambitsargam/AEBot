@@ -89,6 +89,8 @@ const ChatbotApp = () => {
       const amountInAe = parseFloat(amount * 1e18); // Convert AE to aettos
       const tx = await aeSdk.spend(amountInAe, recipientAddress, { onAccount: userAddress });
       alert(`Transaction successful! Tx Hash: ${tx.hash}`);
+      // open the website in next tab
+      window.open(`https://testnet.aescan.io/transactions/${tx.hash}`, "_blank");
 
       // Refresh balance
       const currentBalance = await aeSdk.getBalance(userAddress);
@@ -124,8 +126,7 @@ const ChatbotApp = () => {
         return "Invalid transfer command. Use: transfer <recipient_address> <amount>";
       }
       await transferTokens(recipientAddress, amount);
-      return `Transferred ${amount} AE to ${recipientAddress}.
-      https://testnet.aescan.io/transactions/${tx.hash} `;
+      return `Transferred ${amount} AE to ${recipientAddress}. `;
       // return transaction url also
     }
 
